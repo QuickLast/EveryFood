@@ -1,0 +1,56 @@
+name: cooking_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter_icons:
+  image_path: "assets/icons/app_icon.png"
+  android: "launcher_icon"
+  ios: true
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/logo.png
+
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: fonts/static/Raleway-Black.ttf
+        - asset: fonts\static\Raleway-BlackItalic.ttf
+        - asset: fonts\static\Raleway-BoldItalic.ttf
+        - asset: fonts\static\Raleway-ExtraBold.ttf
+        - asset: fonts\static\Raleway-ExtraBoldItalic.ttf
+        - asset: fonts\static\Raleway-ExtraLight.ttf
+        - asset: fonts\static\Raleway-ExtraLightItalic.ttf
+        - asset: fonts\static\Raleway-Light.ttf
+        - asset: fonts\static\Raleway-LightItalic.ttf
+        - asset: fonts\static\Raleway-Medium.ttf
+        - asset: fonts\static\Raleway-MediumItalic.ttf
+        - asset: fonts\static\Raleway-Regular.ttf
+        - asset: fonts\static\Raleway-SemiBold.ttf
+        - asset: fonts\static\Raleway-SemiBoldItalic.ttf
+        - asset: fonts\static\Raleway-Thin.ttf
+        - asset: fonts\static\Raleway-ThinItalic.ttf
+        - asset: fonts/static/Raleway-Bold.ttf
+        - asset: fonts/static/Raleway-Italic.ttf
+        - asset: fonts/static/Raleway-Medium.ttf
+    - family: Dela
+      fonts:
+        - asset: fonts/DelaGothicOne.ttf
