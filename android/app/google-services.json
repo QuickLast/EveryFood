@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "615660409735",
+    "project_id": "ev3ryfood",
+    "storage_bucket": "ev3ryfood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615660409735:android:f1e5edeafd6114c9953922",
+        "android_client_info": {
+          "package_name": "com.example.cooking_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxI_MR6yqLe9q6CsAVn2Gvvq17wFsmXac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
