@@ -11,13 +11,13 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
-  var _email = "";
-  var _name = "";
-  var _password = "";
-  var _rePassword = "";
+  String _email = "";
+  String _name = "";
+  String _password = "";
+  String _rePassword = "";
 
-  var _errorText = "";
-  var _needAnError = false;
+  String _errorText = "";
+  bool _needAnError = false;
 
   @override
   Widget build(BuildContext context) {
@@ -69,14 +69,14 @@ class _SignUpPageState extends State<SignUpPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       const Padding(
-                        padding: EdgeInsets.only(left: 10),
+                        padding: EdgeInsets.only(left: 3),
                         child: Text(
                           "Регистрация",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              fontFamily: "Raleway",
+                              fontFamily: "Dela",
                               fontSize: 30,
-                              fontWeight: FontWeight.bold),
+                              fontWeight: FontWeight.normal),
                         ),
                       ),
                       const SizedBox(height: 15),
@@ -160,7 +160,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         onChanged: (value) => _password = value,
                         obscureText: true,
                         decoration: InputDecoration(
-                          hintText: "логин12",
+                          hintText: "пароль12",
                           hintStyle: const TextStyle(
                             color: Color.fromRGBO(133, 140, 148, 1),
                             fontFamily: "Raleway",
@@ -193,7 +193,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         onSubmitted: (value) => _rePassword = value,
                         obscureText: true,
                         decoration: InputDecoration(
-                          hintText: "логин12",
+                          hintText: "пароль12",
                           hintStyle: const TextStyle(
                             color: Color.fromRGBO(133, 140, 148, 1),
                             fontFamily: "Raleway",

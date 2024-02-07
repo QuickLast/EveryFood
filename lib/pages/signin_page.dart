@@ -61,9 +61,9 @@ class SignInPage extends StatelessWidget {
                           "Авторизация",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              fontFamily: "Raleway",
+                              fontFamily: "Dela",
                               fontSize: 30,
-                              fontWeight: FontWeight.bold),
+                              fontWeight: FontWeight.normal),
                         ),
                       ),
                       const SizedBox(height: 5),
@@ -125,7 +125,7 @@ class SignInPage extends StatelessWidget {
                       TextField(
                         obscureText: true,
                         decoration: InputDecoration(
-                          hintText: "логин12",
+                          hintText: "пароль12",
                           hintStyle: const TextStyle(
                             color: Color.fromRGBO(133, 140, 148, 1),
                             fontFamily: "Raleway",

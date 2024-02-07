@@ -1,6 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cooking_app/custom_widgets.dart';
 import 'package:cooking_app/func.dart';
+import 'package:cooking_app/pages/add_page.dart';
+import 'package:cooking_app/pages/profile_page.dart';
+import 'package:cooking_app/pages/recipe_page.dart';
 import 'package:cooking_app/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 
@@ -362,7 +365,15 @@ class _HomePageState extends State<HomePage> {
                               hoverColor: const Color.fromRGBO(255, 187, 13, 1),
                               highlightColor:
                                   const Color.fromRGBO(255, 187, 13, 1),
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => RecipePage(
+                                        recipeData: snapshot.data.docs[index]),
+                                  ),
+                                );
+                              },
                               child: Container(
                                 width: MediaQuery.sizeOf(context).width - 20,
                                 height: 85,
@@ -393,7 +404,10 @@ class _HomePageState extends State<HomePage> {
                                               CrossAxisAlignment.start,
                                           children: <Widget>[
                                             Text(
-                                              recipesData['name'].toString(),
+                                              stringCut(
+                                                  string: recipesData['name']
+                                                      .toString(),
+                                                  maxChars: 16),
                                               style: const TextStyle(
                                                   fontFamily: "Raleway",
                                                   fontWeight: FontWeight.bold,
@@ -554,7 +568,14 @@ class _HomePageState extends State<HomePage> {
                           foregroundColor:
                               const Color.fromRGBO(255, 105, 13, 1),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const AddPage(),
+                            ),
+                          );
+                        },
                         child: const Icon(
                           Icons.add,
                           color: Color.fromRGBO(255, 105, 13, 1),
@@ -577,7 +598,14 @@ class _HomePageState extends State<HomePage> {
                           foregroundColor:
                               const Color.fromRGBO(255, 105, 13, 1),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const ProfilePage(),
+                            ),
+                          );
+                        },
                         child: const Icon(
                           Icons.person,
                           color: Color.fromRGBO(255, 105, 13, 1),

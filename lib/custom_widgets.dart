@@ -22,11 +22,11 @@ class Header extends StatelessWidget {
           padding: const EdgeInsets.only(left: 15),
           child: Text(
             title,
-            style: const TextStyle(
+            style: TextStyle(
               color: Colors.black,
               fontFamily: 'Dela',
               fontWeight: FontWeight.w100,
-              fontSize: 20,
+              fontSize: title.length <= 18 ? 20 : 17,
             ),
           ),
         ),
